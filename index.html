@@ -21,6 +21,40 @@
 			color: rgb(0, 174, 255);
 			font-weight: bold;
 		}
+
+		.boxed-arrow {
+			display: inline-flex;
+			/* Use flexbox for better alignment */
+			align-items: center;
+			/* Vertically center the arrow */
+			justify-content: center;
+			/* Horizontally center the arrow */
+			padding: 15px;
+			/* Increase padding for a larger box */
+			background-color: #333;
+			/* Dark grey background for the box */
+			border: 2px solid #000;
+			/* Black border around the box */
+			border-radius: 25px;
+			/* Rounded corners */
+			color: #fff;
+			/* White arrow color initially */
+			text-decoration: none;
+			/* Remove underline */
+			font-size: 30px;
+			/* Increase the size of the arrow */
+			transition: background-color 0.3s, color 0.3s;
+			/* Smooth hover effect */
+			margin-top: 0px;
+			/* Moves the button 20px upwards */
+		}
+
+		.boxed-arrow:hover {
+			background-color: #5a5959;
+			/* White background on hover */
+			color: #333;
+			/* Dark grey arrow on hover */
+		}
 	</style>
 </head>
 
@@ -48,7 +82,7 @@
 							class="icon brands fa-twitter"><span class="label">Twitter</span></a>
 					</li>
 
-					<li><a href="https://wa.me/2348111769813" target="_blank" class="icon brands fa-whatsapp"><span
+					<li><a href="https://wa.me/2348186728858" target="_blank" class="icon brands fa-whatsapp"><span
 								class="label">WhatsApp</span></a></li>
 					<!-- <li><a href="#" class="icon brands fa-facebook-f"><spanlass="label">Facebook</span></a></li> -->
 					<li><a href="mailto:adekeyedamilarelekan@gmail.com" target="_blank" class="icon fa-envelope"><span
@@ -105,13 +139,15 @@
 			<!-- Work -->
 			<article id="works">
 				<h2>Works</h2>
+				<!-- <hr /> -->
+				<br>
 				<nav>
 					<!-- <hr /> -->
 					<h3>Embedded Systems Projects</h3>
 					<p style="text-align: justify;">These projects involve the development of embedded systems, which
 						are specialized
 						computing systems designed to perform dedicated functions within larger systems or products.
-						Embedded systems typically use microcontrollers (e.g., Arduino or ATmega Microcontroller, STM32,
+						Embedded systems typically use microcontrollers (e.g. Arduino or ATmega Microcontroller, STM32,
 						PIC) or microprocessors to control hardware components
 						and perform specific tasks.
 					</p>
@@ -121,7 +157,7 @@
 						</span>
 					</a>
 					<ul class="actions">
-						<li><a href="#embedded-systems-projects" class="button">Show Projects</a></li>
+						<li><a href="#embedded-systems-projects" class="button">View All Projects</a></li>
 					</ul>
 					<hr />
 					<h3>Single-Board Computer Projects</h3>
@@ -137,11 +173,12 @@
 						</span>
 					</a>
 					<ul class="actions">
-						<li><a href="#single-board-computer-projects" class="button">Show Projects</a></li>
+						<li><a href="#single-board-computer-projects" class="button">View All Projects</a></li>
 					</ul>
 					<hr />
 					<h3>
-						Data Science, Data Engineering, and Artificial Intelligence Software-Based Projects
+						Data Science, Data Engineering, Artificial Intelligence & Machine Learning Software-Based
+						Projects
 					</h3>
 					<p style="text-align: justify;">
 						These projects focus on the application of artificial intelligence (AI) techniques to develop
@@ -155,12 +192,35 @@
 						</span>
 					</a>
 					<ul class="actions">
-						<li><a href="#artificial-intelligence-software-based-projects" class="button">Show Projects</a>
+						<li><a href="#artificial-intelligence-software-based-projects" class="button">View All
+								Projects</a>
 						</li>
 					</ul>
 					<hr />
+					<h3>
+						Other Projects: Applied Engineering, Sustainable Solutions, System Innovations & Revitalization
+						Initiatives
+					</h3>
+					<p style="text-align: justify;">
+						This section highlights practical, hands-on projects that apply engineering expertise to solve
+						real-world challenges. From sustainable energy installations and equipment revitalization to
+						custom-built systems, these projects demonstrate innovative technical solutions and versatile
+						problem-solving.
+					</p>
+					<a href="#Other Projects" class="deewan-custom-link">
+						<span class="image main">
+							<img src="images/Other_Projects_Image.webp"
+								alt="Artificial Intelligence Software-Based Projects" />
+						</span>
+					</a>
+					<ul class="actions">
+						<li><a href="#Other_Projects" class="button">View All Projects</a>
+						</li>
+					</ul>
+					<!-- <hr /> -->
 				</nav>
 			</article>
+
 
 			<!-- About -->
 			<article id="about">
@@ -290,7 +350,7 @@
 							class="icon brands fa-twitter"><span class="label">Twitter</span></a>
 					</li>
 
-					<li><a href="https://wa.me/2348111769813" target="_blank" class="icon brands fa-whatsapp"><span
+					<li><a href="https://wa.me/2348186728858" target="_blank" class="icon brands fa-whatsapp"><span
 								class="label">WhatsApp</span></a></li>
 					<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 					<li><a href="mailto:adekeyedamilarelekan@gmail.com" target="_blank" class="icon fa-envelope"><span
@@ -302,7 +362,8 @@
 					</li>
 				</ul>
 				<div class="actions" style="text-align: center;">
-					<a href="#" target="_blank" class="button">See My Resume</a>
+					<a href="https://drive.google.com/file/d/1_OZjU8iV27EMGViiZ8IDJBhOj2SUAus1/view?usp=sharing"
+						target="_blank" class="button">See My Resume</a>
 				</div>
 				<br>
 				<p style="text-align: justify;">
@@ -313,141 +374,192 @@
 
 			<!-- Embedded Systems Projects -->
 			<article id="embedded-systems-projects">
-				<ul class="actions">
-					<!-- <li><a href="#works" class="button">Back</a></li> -->
-					<a href="#works" class="fa-solid fa-arrow-left"></a>
-				</ul>
-				<h3>Embedded Systems Projects</h3>
-				<ul>
-					<li style="font-weight: bold;">
-						<a href="#The Design and Construction of an Obstacle Detection System for Visually Impaired People"
-							style="text-decoration: none;">
-							The Design and Construction of an Obstacle
-							Detection System for Visually Impaired
-							People
-						</a>
-					</li>
-				</ul>
-				<p style="text-align: justify;">Description: These projects involve the development of embedded systems,
-					which are specialized
-					computing systems designed to perform dedicated functions within larger systems or products.
-					Embedded systems typically use microcontrollers or microprocessors to control hardware components
-					and perform specific tasks.
-					<br>
-					<br>
-				</p>
-				<hr />
-				<section id="The Design and Construction of an Obstacle Detection System for Visually Impaired People">
-					<h3 style="text-align: center;">
-						The Design and Construction of an Obstacle Detection System for
-						Visually Impaired People
+				<h2 style="text-align: center;">Embedded Systems Projects</h2>
+				<br>
+				<nav>
+					<h3>
+						<ul>
+							<li style="font-weight: bold;">
+								<a href="#The Design and Construction of an Obstacle Detection System for Visually Impaired People"
+									style="text-decoration: none;">
+									The Design and Construction of an Obstacle
+									Detection System for Visually Impaired
+									People
+								</a>
+							</li>
+						</ul>
 					</h3>
-					<ul>
-						<li>
-							<a href="#data-science-engineering-ai-projects">
-								<span class="image main">
-									<img src="images/8.jpg" alt="Data Science/Engineering and AI Projects" />
-								</span>
-								Data Science/Engineering and Artificial Intelligence Software-Based Projects
-							</a>
-							<p style="text-align: justify;">Description of Data Science/Engineering and AI Projects</p>
-						</li>
+					<a href="#embedded-systems-projects" class="deewan-custom-link">
+						<span class="image main">
+							<img src="images/24.jpg" alt="Embedded Systems Projects" />
+						</span>
+					</a>
+					<p style="text-align: justify;">These projects involve the development of embedded systems, which
+						are specialized
+						computing systems designed to perform dedicated functions within larger systems or products.
+						Embedded systems typically use microcontrollers (e.g., Arduino or ATmega Microcontroller, STM32,
+						PIC) or microprocessors to control hardware components
+						and perform specific tasks.
+					</p>
+					<ul class="actions">
+						<li><a href="#embedded-systems-projects" class="button">Read More</a></li>
 					</ul>
-				</section>
-				<hr />
+					<hr />
 
+					<!-- <hr /> -->
+				</nav>
 			</article>
 
 			<!-- single board computer projects -->
 			<article id="single-board-computer-projects">
-				<ul class="actions">
-					<!-- <a href="#works" class="button">Back</a></li> -->
-					<a href="#works" class="fa-solid fa-arrow-left"></a>
-				</ul>
-				<h3>Single-Board Computer Projects</h3>
-				<p style="text-align: justify;">
-					I'm excited to connect with you! Whether you have a project idea, want to discuss a
-					potential
-					collaboration, or simply share insights on the latest developments in technology, don't
-					hesitate
-					to
-					reach out - I'm eager to hear from you.
-					<br>
-					<br>
+				<h2 style="text-align: center;">Single-Board Computer Projects</h2>
+				<br>
+				<nav>
+					<h3>
+						<ul>
+							<li style="font-weight: bold;">
+								<a href="#The Design and Construction of an Obstacle Detection System for Visually Impaired People"
+									style="text-decoration: none;">
+									The Design and Construction of an Obstacle
+									Detection System for Visually Impaired
+									People
+								</a>
+							</li>
+						</ul>
+					</h3>
+					<a href="#embedded-systems-projects" class="deewan-custom-link">
+						<span class="image main">
+							<img src="images/24.jpg" alt="Embedded Systems Projects" />
+						</span>
+					</a>
+					<p style="text-align: justify;">These projects involve the development of embedded systems, which
+						are specialized
+						computing systems designed to perform dedicated functions within larger systems or products.
+						Embedded systems typically use microcontrollers (e.g., Arduino or ATmega Microcontroller, STM32,
+						PIC) or microprocessors to control hardware components
+						and perform specific tasks.
+					</p>
+					<ul class="actions">
+						<li><a href="#embedded-systems-projects" class="button">Read More</a></li>
+					</ul>
+					<hr />
 
-					You can reach me via email at <a href="mailto:adekeyedamilarelekan@gamil.com"
-						class="deewan-custom-link" target="_blank">adekeyedamilarelekan@gmail.com</a>.
-					<br></br>
-					Additionally, you can connect with me through
-					various social media platforms and messaging apps. I'm here and eager to chat!
-
-				<ul class="icons">
-					<li><a href="https://www.twitter.com/deewansonic" target="_blank"
-							class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-					</li>
-
-					<li><a href="https://wa.me/2348111769813" target="_blank" class="icon brands fa-whatsapp"><span
-								class="label">WhatsApp</span></a></li>
-					<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-					<li><a href="mailto:adekeyedamilarelekan@gmail.com" target="_blank" class="icon fa-envelope"><span
-								class="label">Email</span></a></li>
-					<li><a href="https://www.linkedin.com/in/damilare-l-adekeye-8ba378243" target="_blank"
-							class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://www.github.com/adekeyedamilarelekan" target="_blank"
-							class="icon brands fa-github"><span class="label">Github</span></a>
-					</li>
-				</ul>
-				<p style="text-align: justify;"> I'm eagerly looking forward to connecting with you and discovering how
-					we can work together to
-					bring
-					great and innovative ideas to life. Thank you for visiting my portfolio!
-				</p>
+					<!-- <hr /> -->
+				</nav>
 			</article>
 
-			<!-- DATA SCIENCE, DATA ENGINEERING, AND ARTIFICIAL INTELLIGENCE SOFTWARE-BASED PROJECTS -->
+			<!-- DATA SCIENCE, DATA ENGINEERING, ARTIFICIAL INTELLIGENCE & MACHINE LEARNING SOFTWARE-BASED PROJECTS -->
 			<article id="artificial-intelligence-software-based-projects">
-				<ul class="actions">
-					<!-- <li><a href="#works" class="button">Back</a></li> -->
-					<a href="#works" class="fa-solid fa-arrow-left"></a>
-				</ul>
-				<h3>DATA SCIENCE, DATA ENGINEERING, AND ARTIFICIAL INTELLIGENCE SOFTWARE-BASED PROJECTS</h3>
-				<p style="text-align: justify;">
-					I'm excited to connect with you! Whether you have a project idea, want to discuss a
-					potential
-					collaboration, or simply share insights on the latest developments in technology, don't
-					hesitate
-					to
-					reach out - I'm eager to hear from you.
-					<br>
-					<br>
+				<h2 style="text-align: center;">DATA SCIENCE, DATA ENGINEERING, ARTIFICIAL INTELLIGENCE & MACHINE
+					LEARNING SOFTWARE-BASED PROJECTS
+				</h2>
+				<br>
+				<nav>
+					<h3>
+						<ul>
+							<li style="font-weight: bold;">
+								<a href="#The Design and Construction of an Obstacle Detection System for Visually Impaired People"
+									style="text-decoration: none;">
+									The Design and Construction of an Obstacle
+									Detection System for Visually Impaired
+									People
+								</a>
+							</li>
+						</ul>
+					</h3>
+					<a href="#embedded-systems-projects" class="deewan-custom-link">
+						<span class="image main">
+							<img src="images/24.jpg" alt="Embedded Systems Projects" />
+						</span>
+					</a>
+					<p style="text-align: justify;">These projects involve the development of embedded systems, which
+						are specialized
+						computing systems designed to perform dedicated functions within larger systems or products.
+						Embedded systems typically use microcontrollers (e.g., Arduino or ATmega Microcontroller, STM32,
+						PIC) or microprocessors to control hardware components
+						and perform specific tasks.
+					</p>
+					<ul class="actions">
+						<li><a href="#embedded-systems-projects" class="button">Read More</a></li>
+					</ul>
+					<hr />
 
-					You can reach me via email at <a href="mailto:adekeyedamilarelekan@gamil.com"
-						class="deewan-custom-link" target="_blank">adekeyedamilarelekan@gmail.com</a>.
-					<br></br>Additionally, you can connect with me through
-					various social media platforms and messaging apps. I'm here and eager to chat!
-
-				<ul class="icons">
-					<li><a href="https://www.twitter.com/deewansonic" target="_blank"
-							class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-					</li>
-
-					<li><a href="https://wa.me/2348111769813" target="_blank" class="icon brands fa-whatsapp"><span
-								class="label">WhatsApp</span></a></li>
-					<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-					<li><a href="mailto:adekeyedamilarelekan@gmail.com" target="_blank" class="icon fa-envelope"><span
-								class="label">Email</span></a></li>
-					<li><a href="https://www.linkedin.com/in/damilare-l-adekeye-8ba378243" target="_blank"
-							class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://www.github.com/adekeyedamilarelekan" target="_blank"
-							class="icon brands fa-github"><span class="label">Github</span></a>
-					</li>
-				</ul>
-				<p style="text-align: justify;">
-					I'm eagerly looking forward to connecting with you and discovering how we can work together to
-					bring
-					great and innovative ideas to life. Thank you for visiting my portfolio!
-				</p>
+					<!-- <hr /> -->
+				</nav>
 			</article>
+
+			<!-- Other Projects: Applied Engineering, Sustainable Solutions, System Innovations & Revitalization
+						Initiatives -->
+			<article id="Other_Projects">
+				<h2 style="text-align: center;">Other Projects: Applied Engineering, Sustainable Solutions, System
+					Innovations & Revitalization
+					Initiatives
+				</h2>
+				<br>
+				<nav>
+					<h3>
+						<ul>
+							<li style="font-weight: bold;">
+								<a href="#The Design and Construction of an Obstacle Detection System for Visually Impaired People"
+									style="text-decoration: none;">
+									The Design and Construction of an Obstacle
+									Detection System for Visually Impaired
+									People
+								</a>
+							</li>
+						</ul>
+					</h3>
+					<a href="#embedded-systems-projects" class="deewan-custom-link">
+						<span class="image main">
+							<img src="images/Other_Projects_Image.webp" alt="Embedded Systems Projects" />
+						</span>
+					</a>
+					<p style="text-align: justify;">These projects involve the development of embedded systems, which
+						are specialized
+						computing systems designed to perform dedicated functions within larger systems or products.
+						Embedded systems typically use microcontrollers (e.g., Arduino or ATmega Microcontroller, STM32,
+						PIC) or microprocessors to control hardware components
+						and perform specific tasks.
+					</p>
+					<ul class="actions">
+						<li><a href="#embedded-systems-projects" class="button">Read More</a></li>
+					</ul>
+					<hr />
+
+					<!-- <hr /> -->
+				</nav>
+			</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
 
 			<!-- Elements -->
 			<article id="experiences">
@@ -519,7 +631,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								class="icon brands fa-twitter"><span class="label">Twitter</span></a>
 						</li>
 
-						<li><a href="https://wa.me/2348111769813" target="_blank" class="icon brands fa-whatsapp"><span
+						<li><a href="https://wa.me/2348186728858" target="_blank" class="icon brands fa-whatsapp"><span
 									class="label">WhatsApp</span></a></li>
 						<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 						<li><a href="mailto:adekeyedamilarelekan@gmail.com" target="_blank"

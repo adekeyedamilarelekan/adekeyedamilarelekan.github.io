@@ -4,3 +4,4 @@ https://www.coderus.com/guide-to-embedded-systems/
 
 https://www.pcbaaa.com/embedded-system/
 
+https://olayiwolaayinde.medium.com/7-ways-to-become-a-full-stack-embedded-software-engineer-9401b591a71c
