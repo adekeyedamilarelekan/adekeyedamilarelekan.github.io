@@ -382,7 +382,7 @@
 				<br>
 				<nav>
 					<!-- NFC Access Control Section -->
-					<!-- <h3 id="sbc-rpi-pico-w-nfc-access-control">
+					<h3 id="sbc-rpi-pico-w-nfc-access-control">
 						<ul>
 							<li style="font-weight: bold;">
 								<a href="https://github.com/adekeyedamilarelekan/" style="text-decoration: none;">
@@ -407,30 +407,7 @@
 					<ul class="actions">
 						<li><a href="https://github.com/adekeyedamilarelekan/" class="button">Read More</a></li>
 					</ul>
-					<hr /> -->
-					<!-- single board computer projects -->
-
-					<!-- NFC Access Control Section -->
-					<h3 id="sbc-rpi-pico-w-nfc-access-control">
-						<ul>
-							<li style="font-weight: bold;">
-								<!-- Link that will target the nested element directly -->
-								<a href="#single-board-computer-projects/sbc-rpi-pico-w-nfc-access-control"
-									style="text-decoration: none;">
-									Near Field Communication (NFC) Based Access Control System for Restricted and Secure
-									Door Entry Solutions.
-								</a>
-							</li>
-						</ul>
-					</h3>
-					<p style="text-align: justify;">
-						This project utilizes NFC technology with the PN532 module to create
-						a secure access control system. Authorized users can scan a phone or NFC tag to trigger a servo
-						motor, unlocking the door for registered individuals. Designed for libraries or offices, the
-						system ensures that only approved users gain entry, enhancing security and preventing
-						unauthorized access. It integrates modern technology for seamless and contactless entry, making
-						it a practical and efficient solution for controlled environments.
-					</p>
+					<hr />
 
 
 				</nav>
@@ -835,49 +812,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script>document.getElementById("currentYear").textContent = new Date().getFullYear();</script>
 	<!--for auto year generation beside copyright &cpy  -->
 
-	<script>
-		// Smooth scrolling for nested fragments
-		document.addEventListener("DOMContentLoaded", function () {
-			// Handle the hash navigation when the page is loaded
-			const hash = window.location.hash.substring(1);  // Get the hash without the '#'
-
-			if (hash.includes("/")) {
-				const [parentId, childId] = hash.split("/");
-
-				// Scroll to the parent article section first
-				const parentElement = document.getElementById(parentId);
-				if (parentElement) {
-					parentElement.scrollIntoView({ behavior: "smooth", block: "start" });
-
-					// Now scroll to the nested child section
-					const childElement = parentElement.querySelector(`#${childId}`);
-					if (childElement) {
-						childElement.scrollIntoView({ behavior: "smooth", block: "start" });
-					}
-				}
-			}
-		});
-
-		// Optional: If the user clicks a link with a nested hash, handle it as well
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener("click", function (e) {
-				e.preventDefault();
-				const targetId = this.getAttribute("href").substring(1);
-				const [parentId, childId] = targetId.split("/");
-
-				const parentElement = document.getElementById(parentId);
-				if (parentElement) {
-					parentElement.scrollIntoView({ behavior: "smooth", block: "start" });
-
-					// Now scroll to the nested child section
-					const childElement = parentElement.querySelector(`#${childId}`);
-					if (childElement) {
-						childElement.scrollIntoView({ behavior: "smooth", block: "start" });
-					}
-				}
-			});
-		});
-	</script>
 
 </body>
 
