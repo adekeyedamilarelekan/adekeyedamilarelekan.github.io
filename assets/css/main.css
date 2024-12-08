@@ -1144,6 +1144,10 @@ button,
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
+
+	/*Deewan Added*/
+	font-family: inherit; /* Ensures the font matches the parent or links */
+
 }
 
 input[type="submit"]:hover,
@@ -1792,4 +1796,22 @@ body.is-preload #footer {
 
 .actions.horizontal li {
 	margin: 0;
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 480px) {
+    ul.actions.horizontal {
+        flex-direction: column; /* Stack buttons vertically */
+        justify-content: center; /* Center-align buttons */
+    }
+
+    ul.actions.horizontal li {
+        width: 100%; /* Make buttons take full width */
+        text-align: center; /* Center the text */
+        margin: 0.5rem 0; /* Add spacing between buttons */
+    }
+
+    ul.actions.horizontal li .button {
+        width: 90%; /* Reduce button width slightly */
+    }
 }
