@@ -897,6 +897,9 @@ ul.actions {
 	list-style: none;
 	margin-left: -1rem;
 	padding-left: 0;
+
+	/*Deewan added*/
+	justify-content: space-between;
 }
 
 ul.actions li {
@@ -1784,7 +1787,8 @@ body.is-preload #footer {
 
 
 
-/* deewan added */
+ /*deewan added*/
+ /*
 .actions.horizontal {
 	display: flex;
 	justify-content: space-between;
@@ -1796,4 +1800,14 @@ body.is-preload #footer {
 
 .actions.horizontal li {
 	margin: 0;
+} */
+#wrapper article.wide-article {
+    width: 100%; /* Adjust to your preferred width */
+    max-width: 1200px; /* Optional: Limit the max width */
+    margin: 0 auto; /* Center the article horizontally */
+}
+@media screen and (max-width: 768px) {
+    #wrapper article.wide-article {
+        width: 95%; /* Narrower on smaller screens */
+    }
 }
