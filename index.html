@@ -1209,16 +1209,44 @@
 				<section>
 					<h3>List of Libraries Used</h3>
 					<ul>
-						<li><strong>Adafruit CircuitPython PN532: </strong> For NFC communication.</li>
-						<li><strong>Adafruit CircuitPython LCD: </strong> For controlling the 1602 LCD in I2C mode.</li>
-						<li><strong>Adafruit CircuitPython Firebase: </strong> For real-time Firebase database
-							operations.</li>
-						<li><strong>Adafruit CircuitPython ServoKit: </strong> For controlling the servo motor for door
-							opening/closing.</li>
-						<li><strong>Adafruit CircuitPython Time: </strong> For delay handling and time-based operations.
+						<li><strong>Adafruit CircuitPython PN532: </strong> <em>(from adafruit_pn532.i2c import
+								PN532_I2C)
+							</em> For NFC communication.</li>
+						<li><strong>Adafruit Bus Device & Adafruit CircuitPython LCD: </strong> <em>(from lcd.lcd import
+								LCD) & (from
+								lcd.i2c_pcf8574_interface import I2CPCF8574Interface)</em> For controlling the 1602
+							LCD in I2C mode.</li>
+						<li><strong>Adafruit CircuitPython Firebase and WiFi/Internet Connectivity: </strong>
+							<em>(import adafruit_requests),
+								(import wifi),
+								(import socketpool), &
+								(import ssl)</em> For real-time Firebase database
+							operations.
 						</li>
-						<p>These libraries were instrumental in ensuring seamless integration and functionality across
-							all system components.</p>
+						<li><strong>Servo Motor PWM: </strong> <em>(import pwmio)</em> For controlling the servo motor
+							for door
+							opening/closing.
+						</li>
+						<li><strong>GPIO Pins: </strong> <em>(import digitalio)</em> For controlling the Raspberry Pi's
+							input and output pins.
+						</li>
+						<li><strong>Time: </strong> <em>(import time)</em> For delay handling and time-based operations.
+						</li>
+						<li><strong>Adafruit CircuitPython Board: </strong> <em>(import board),
+								(import busio), & (import binascii) </em> For delay handling and time-based operations.
+						</li>
+
+						<p>
+							These libraries were essential for seamless integration and functionality across all system
+							components.<br />
+							You can explore <a
+								href="https://github.com/adekeyedamilarelekan/SBC-rpi-pico-w-nfc-based-access-control-system/tree/main/lib"
+								class="deewan-custom-link">the library files</a> to view and download them directly.
+							Alternatively, you can check out the complete collection of CircuitPython libraries in the
+							<a href="https://github.com/adafruit/Adafruit_CircuitPython_Bundle/"
+								class="deewan-custom-link">Adafruit CircuitPython Bundle</a>.
+						</p>
+
 					</ul>
 				</section>
 				<hr>
