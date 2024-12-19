@@ -682,7 +682,8 @@
 					</h3>
 					<a href="#sbc-rpi-pico-w-nfc-based-access-control-system" class="deewan-custom-link">
 						<span class="image main">
-							<img src="images/SBC/1/system_overview2.webp" alt="sbc-rpi-pico-w-nfc-based-access-control-system" />
+							<img src="images/SBC/1/system_overview2.webp"
+								alt="sbc-rpi-pico-w-nfc-based-access-control-system" />
 						</span>
 					</a>
 					<p style="text-align: justify;">This project utilizes NFC technology with the PN532 module to create
@@ -1221,6 +1222,82 @@
 					</ul>
 				</section>
 				<hr>
+
+				<section>
+					<h3>Pinout Diagram & GPIO Pin Usage</h3>
+					<p>Below is the pinout diagram of the Raspberry Pi Pico W. Please refer to this when recreating or
+						developing, along with the GPIO pins used in the project.</p>
+					<strong>Pinout Diagram:</strong>
+					<span class="image main" style="display: block; margin-top: 0;">
+						<a href="/images/SBC/1/Raspberry-Pi-Pico-W-Pinout.webp" target="_blank"><img
+								src="images/SBC/1/Raspberry-Pi-Pico-W-Pinout.webp" alt="Raspberry-Pi-Pico-W-Pinout" />
+						</a>
+					</span>
+					<h4>GPIO Pins Used:</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>GPIO Pin</th>
+									<th>Component</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>GPIO 2</td>
+									<td>Green LED (Registered Indicator)</td>
+									<td>Indicates access granted.</td>
+								</tr>
+								<tr>
+									<td>GPIO 3</td>
+									<td>Red LED (Unregistered Indicator)</td>
+									<td>Indicates access denied.</td>
+								</tr>
+								<tr>
+									<td>GPIO 6</td>
+									<td>Blue LED (WIFI Indicator)</td>
+									<td>Indicates Wi-Fi connection.</td>
+								</tr>
+								<tr>
+									<td>GPIO 15</td>
+									<td>Servo Motor PWM</td>
+									<td>Controls door opening and closing.</td>
+								</tr>
+								<tr>
+									<td>GPIO 22</td>
+									<td>Buzzer</td>
+									<td>Beeps once for access denied and only once to alert us when the Raspberry Pi is
+										connected to Wi-Fi.</td>
+								</tr>
+								<tr>
+									<td>GPIO 4</td>
+									<td>PN532 NFC Module SDA, & <br /> LCD1602 SDA</td>
+									<td>I2C communication for LCD & NFC.</td>
+								</tr>
+								<tr>
+									<td>GPIO 5</td>
+									<td>PN532 NFC Module SCL, & <br /> LCD1602 SCL</td>
+									<td>I2C communication for LCD & NFC.</td>
+								</tr>
+
+							</tbody>
+							<!-- <tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot> -->
+						</table>
+					</div>
+
+					<p>This layout highlights the organized and optimized usage of the GPIO pins for seamless
+						functionality.
+					</p>
+
+				</section>
+				<hr>
+
 				<section>
 					<h3>Process / Methodology</h3>
 					<!-- <h4>System Design</h4>
@@ -1367,81 +1444,6 @@
 				<hr>
 
 				<section>
-					<h3>Pinout Diagram & GPIO Pin Usage</h3>
-					<p>Below is the pinout diagram of the Raspberry Pi Pico W. Please refer to this when recreating or
-						developing, along with the GPIO pins used in the project.</p>
-					<strong>Pinout Diagram:</strong>
-					<span class="image main" style="display: block; margin-top: 0;">
-						<a href="/images/SBC/1/Raspberry-Pi-Pico-W-Pinout.webp" target="_blank"><img
-								src="images/SBC/1/Raspberry-Pi-Pico-W-Pinout.webp" alt="Raspberry-Pi-Pico-W-Pinout" />
-						</a>
-					</span>
-					<h4>GPIO Pins Used:</h4>
-					<div class="table-wrapper">
-						<table>
-							<thead>
-								<tr>
-									<th>GPIO Pin</th>
-									<th>Component</th>
-									<th>Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>GPIO 2</td>
-									<td>Green LED (Registered Indicator)</td>
-									<td>Indicates access granted.</td>
-								</tr>
-								<tr>
-									<td>GPIO 3</td>
-									<td>Red LED (Unregistered Indicator)</td>
-									<td>Indicates access denied.</td>
-								</tr>
-								<tr>
-									<td>GPIO 6</td>
-									<td>Blue LED (WIFI Indicator)</td>
-									<td>Indicates Wi-Fi connection.</td>
-								</tr>
-								<tr>
-									<td>GPIO 15</td>
-									<td>Servo Motor PWM</td>
-									<td>Controls door opening and closing.</td>
-								</tr>
-								<tr>
-									<td>GPIO 22</td>
-									<td>Buzzer</td>
-									<td>Beeps once for access denied and only once to alert us when the Raspberry Pi is
-										connected to Wi-Fi.</td>
-								</tr>
-								<tr>
-									<td>GPIO 4</td>
-									<td>PN532 NFC Module SDA, & <br /> LCD1602 SDA</td>
-									<td>I2C communication for LCD & NFC.</td>
-								</tr>
-								<tr>
-									<td>GPIO 5</td>
-									<td>PN532 NFC Module SCL, & <br /> LCD1602 SCL</td>
-									<td>I2C communication for LCD & NFC.</td>
-								</tr>
-
-							</tbody>
-							<!-- <tfoot>
-								<tr>
-									<td colspan="2"></td>
-									<td>100.00</td>
-								</tr>
-							</tfoot> -->
-						</table>
-					</div>
-
-					<p>This layout highlights the organized and optimized usage of the GPIO pins for seamless
-						functionality.
-					</p>
-
-				</section>
-				<hr>
-
-				<section>
 					<h3>Challenges & Solutions</h3>
 					<ul>
 						<li><strong>Challenge:</strong> Ensuring secure and reliable NFC communication.<br>
@@ -1524,7 +1526,8 @@
 				<section>
 					<h3>Demonstation / Access</h3>
 					<ul>
-						<li><strong>GitHub Repository (for code & others): </strong> <a href="https://github.com/adekeyedamilarelekan/SBC-rpi-pico-w-nfc-based-access-control-system"
+						<li><strong>GitHub Repository (for code & others): </strong> <a
+								href="https://github.com/adekeyedamilarelekan/SBC-rpi-pico-w-nfc-based-access-control-system"
 								class="deewan-custom-link">Click here!</a>
 						</li>
 						<li><strong>Live Demonstation Video:</strong> <a href="#" class="deewan-custom-link">Watch here!
