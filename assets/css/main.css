@@ -1149,7 +1149,8 @@ button,
 	white-space: nowrap;
 
 	/*Deewan Added*/
-	font-family: inherit; /* Ensures the font matches the parent or links */
+	font-family: inherit;
+	/* Ensures the font matches the parent or links */
 
 }
 
@@ -1420,6 +1421,23 @@ body.is-preload #bg:before {
 	line-height: 5.5rem;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
+
+	/* Deewan - Below are the code i added to change the diamond to fa laptop-code */
+	/* width: 100px; */
+	/*Adjust the size of the circle*/
+	/* height: 100px; */
+	/* border-radius: 50%; */
+	/* Makes the div circular */
+	display: flex;
+	justify-content: center;
+	/*Centers the icon horizontally*/
+	align-items: center;
+	/*Centers the icon vertically */
+	overflow: hidden;
+	/*Ensures content does not spill out */
+	position: relative;
+	/* Enables fine-tuned adjustments */
+
 }
 
 #header .logo .icon:before {
@@ -1787,8 +1805,8 @@ body.is-preload #footer {
 
 
 
- /*deewan added*/
- /*
+/*deewan added*/
+/*
 .actions.horizontal {
 	display: flex;
 	justify-content: space-between;
@@ -1802,12 +1820,17 @@ body.is-preload #footer {
 	margin: 0;
 } */
 #wrapper article.wide-article {
-    width: 100%; /* Adjust to your preferred width */
-    max-width: 1200px; /* Optional: Limit the max width */
-    margin: 0 auto; /* Center the article horizontally */
+	width: 100%;
+	/* Adjust to your preferred width */
+	max-width: 1200px;
+	/* Optional: Limit the max width */
+	margin: 0 auto;
+	/* Center the article horizontally */
 }
+
 @media screen and (max-width: 768px) {
-    #wrapper article.wide-article {
-        width: 95%; /* Narrower on smaller screens */
-    }
+	#wrapper article.wide-article {
+		width: 95%;
+		/* Narrower on smaller screens */
+	}
 }
