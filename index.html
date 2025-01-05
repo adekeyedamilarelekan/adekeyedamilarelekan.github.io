@@ -1927,6 +1927,12 @@
 							percentage levels and whether the battery was "IN" (charging) or "OUT" (outputting).</li>
 						<li>A full charge cycle was completed to verify that all cells were balanced and operating
 							within their optimal voltage ranges.</li>
+						<li>A 24V, 10A LiFePO4 battery charger was used to charge the system, providing a no-load output
+							of
+							29.0V, which matches the battery's full charge voltage. This alignment ensures the battery
+							is fully charged when it reaches 29.0V. LiFePO4 chargers are designed to balance the cells
+							and prevent overcharging, often reducing current as the battery nears full capacity to
+							protect its lifespan and maintain optimal performance.</li>
 					</ul>
 					<p style="text-align: center; font-weight: bold;">
 						<strong> Charging the battery </strong>
@@ -1946,6 +1952,8 @@
 									src="images/Others/1/Charging-and-multimeter.webp" alt="Project Showcase" /></a>
 							<a href="images/Others/1/charging-28_9V.webp" target="_blank"><img
 									src="images/Others/1/charging-28_9V.webp" alt="Project Showcase" /></a>
+							<br>
+							Below picture depicts the full charging voltage of the battery.
 							<a href="images/Others/1/charging-29V.webp" target="_blank"><img
 									src="images/Others/1/charging-29V.webp" alt="Project Showcase" /></a>
 
@@ -1967,6 +1975,91 @@
 
 						</span>
 					</p>
+				</section>
+				<hr>
+
+				<section>
+
+					<h3>Performance Calculations and Analysis</h3>
+					<p>This section details the performance and characteristics of the battery pack connected in an 8S3P
+						configuration, highlighting voltage, capacity, energy, runtime, current draw, and charging time.
+						These calculations provide a comprehensive understanding of the pack's capabilities and its
+						adaptability for various load conditions.
+					</p>
+					<h4>Battery Specifications</h4>
+					<ul>
+						<li><b>Cell Specifications:</b>
+							<ul>
+								<li>Voltage: 3.2V</li>
+								<li>Capacity: 15Ah</li>
+								<li>Energy: 48Wh</li>
+							</ul>
+						</li>
+						<li><b>Configuration:</b>
+							<ul>
+								<li><b>8S</b> (8 cells in series): Increases voltage.</li>
+								<li><b>3P</b> (3 cells in parallel): Increases capacity.</li>
+							</ul>
+						</li>
+					</ul>
+					<h4>Key Calculations</h4>
+					<ul>
+						<li><b>Nominal Voltage:</b> <code>V_total = 3.2V × 8 = 25.6V</code></li>
+						<li><b>Total Capacity:</b> <code>C_total = 15Ah × 3 = 45Ah</code></li>
+						<li><b>Total Energy:</b>
+							<code>E_total = V_total × C_total = 25.6V × 45Ah = 1152Wh = 1.152kWh</code>
+						</li>
+					</ul>
+
+					<h4>Runtime Examples</h4>
+					<ul>
+						<li><b>100W Load:</b> <code>t = E_total / P_load = 1152Wh / 100W = 11.52 hours</code></li>
+						<li><b>300W Load:</b> <code>t = E_total / P_load = 1152Wh / 300W = 3.84 hours</code></li>
+						<li><b>500W Load:</b> <code>t = E_total / P_load = 1152Wh / 500W = 2.304 hours</code></li>
+					</ul>
+
+					<h4>Current Draw Examples</h4>
+					<ul>
+						<li><b>100W Load:</b> <code>I = P_load / V_total = 100W / 25.6V = 3.91A</code></li>
+						<li><b>300W Load:</b> <code>I = P_load / V_total = 300W / 25.6V = 11.72A</code></li>
+						<li><b>500W Load:</b> <code>I = P_load / V_total = 500W / 25.6V = 19.53A</code></li>
+					</ul>
+
+					<h4>Charging Time</h4>
+					<ul>
+						<li><b>5A Charger:</b> <code>t_charge = C_total / I_charge = 45Ah / 5A = 9 hours</code></li>
+						<li><b>10A Charger (i used this charger):</b>
+							<code>t_charge = C_total / I_charge = 45Ah / 10A = 4.5 hours</code>
+						</li>
+					</ul>
+
+					<h4>Summary of Performance</h4>
+					<ul>
+						<li><b>Voltage:</b> 25.6V</li>
+						<li><b>Capacity:</b> 45Ah</li>
+						<li><b>Energy:</b> 1152Wh (1.152kWh)</li>
+						<li><b>Runtime Examples:</b>
+							<ul>
+								<li>11.52 hours for a 100W load.</li>
+								<li>3.84 hours for a 300W load.</li>
+								<li>2.304 hours for a 500W load.</li>
+							</ul>
+						</li>
+						<li><b>Charging Time:</b>
+							<ul>
+								<li>9 hours with a 5A charger.</li>
+								<li>4.5 hours with a 10A charger.</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- <p style="text-align: center; font-weight: bold;">
+						<span class="image main" style="display: block; margin-top: 0;">
+							Battery Holder Assembly
+							<a href="images/Others/1/Battery-holder-assembly.webp" target="_blank"><img
+									src="images/Others/1/Battery-holder-assembly.webp" alt="Project Showcase" /></a>
+						</span>
+					</p> -->
+
 				</section>
 				<hr>
 
