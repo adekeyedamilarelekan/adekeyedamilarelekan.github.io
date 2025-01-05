@@ -2003,35 +2003,37 @@
 						</li>
 					</ul>
 					<h4>Key Calculations</h4>
-					<ul>
+					<ol>
 						<li><b>Nominal Voltage:</b> <code>V_total = 3.2V × 8 = 25.6V</code></li>
 						<li><b>Total Capacity:</b> <code>C_total = 15Ah × 3 = 45Ah</code></li>
 						<li><b>Total Energy:</b>
 							<code>E_total = V_total × C_total = 25.6V × 45Ah = 1152Wh = 1.152kWh</code>
 						</li>
-					</ul>
+						<br>
 
-					<h4>Runtime Examples</h4>
-					<ul>
-						<li><b>100W Load:</b> <code>t = E_total / P_load = 1152Wh / 100W = 11.52 hours</code></li>
-						<li><b>300W Load:</b> <code>t = E_total / P_load = 1152Wh / 300W = 3.84 hours</code></li>
-						<li><b>500W Load:</b> <code>t = E_total / P_load = 1152Wh / 500W = 2.304 hours</code></li>
-					</ul>
+						<li><b>Runtime Examples:</b> (For a load consuming)</li>
+						<ul>
 
-					<h4>Current Draw Examples</h4>
-					<ul>
-						<li><b>100W Load:</b> <code>I = P_load / V_total = 100W / 25.6V = 3.91A</code></li>
-						<li><b>300W Load:</b> <code>I = P_load / V_total = 300W / 25.6V = 11.72A</code></li>
-						<li><b>500W Load:</b> <code>I = P_load / V_total = 500W / 25.6V = 19.53A</code></li>
-					</ul>
+							<li><b>100W Load:</b> <code>t = E_total / P_load = 1152Wh / 100W = 11.52 hours</code></li>
+							<li><b>300W Load:</b> <code>t = E_total / P_load = 1152Wh / 300W = 3.84 hours</code></li>
+							<li><b>500W Load:</b> <code>t = E_total / P_load = 1152Wh / 500W = 2.304 hours</code></li>
+						</ul>
 
-					<h4>Charging Time</h4>
-					<ul>
-						<li><b>5A Charger:</b> <code>t_charge = C_total / I_charge = 45Ah / 5A = 9 hours</code></li>
-						<li><b>10A Charger (i used this charger):</b>
-							<code>t_charge = C_total / I_charge = 45Ah / 10A = 4.5 hours</code>
-						</li>
-					</ul>
+						<li><b>Current Draw Examples:</b> (For a load consuming)</li>
+						<ul>
+							<li><b>100W Load:</b> <code>I = P_load / V_total = 100W / 25.6V = 3.91A</code></li>
+							<li><b>300W Load:</b> <code>I = P_load / V_total = 300W / 25.6V = 11.72A</code></li>
+							<li><b>500W Load:</b> <code>I = P_load / V_total = 500W / 25.6V = 19.53A</code></li>
+						</ul>
+
+						<li><b>Charging Time:</b> (With a given charging current)</li>
+						<ul>
+							<li><b>5A Charger:</b> <code>t_charge = C_total / I_charge = 45Ah / 5A = 9 hours</code></li>
+							<li><b>10A Charger (i used this charger):</b>
+								<code>t_charge = C_total / I_charge = 45Ah / 10A = 4.5 hours</code>
+							</li>
+						</ul>
+					</ol>
 
 					<h4>Summary of Performance</h4>
 					<ul>
