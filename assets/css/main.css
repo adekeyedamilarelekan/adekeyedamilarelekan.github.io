@@ -342,7 +342,7 @@ h6 {
 @media screen and (max-width: 736px) {
 
 	h1 {
-		font-size: 1.75rem;
+		 font-size: 1.40rem; /* originally was 1.75rem */
 		line-height: 1.4;
 	}
 
@@ -1802,7 +1802,21 @@ body.is-preload #footer {
 	opacity: 0;
 }
 
+#wrapper article.wide-article {
+	width: 100%;
+	/* Adjust to your preferred width */
+	max-width: 1200px;
+	/* Optional: Limit the max width */
+	margin: 0 auto;
+	/* Center the article horizontally */
+}
 
+@media screen and (max-width: 768px) {
+	#wrapper article.wide-article {
+		width: 95%;
+		/* Narrower on smaller screens */
+	}
+}
 
 
 /*deewan added*/
@@ -1819,18 +1833,161 @@ body.is-preload #footer {
 .actions.horizontal li {
 	margin: 0;
 } */
-#wrapper article.wide-article {
-	width: 100%;
-	/* Adjust to your preferred width */
-	max-width: 1200px;
-	/* Optional: Limit the max width */
-	margin: 0 auto;
-	/* Center the article horizontally */
+
+.code-snippet-container {
+	max-height: 450px;
+	/* Limits the height of the code block */
+	overflow-y: auto;
+	/* Enables vertical scrolling */
+	overflow-x: auto;
+	/* Enables horizontal scrolling if needed */
+	background-color: #fff4f4;
+	/* Light background for readability */
+	border: 1px solid #ddd;
+	/* Subtle border */
+	border-radius: 5px;
+	/* Rounded corners */
+	padding: 10px;
+	/* Inner spacing */
+	font-size: 14px;
+	/* Readable font size */
+	margin: 10px 0;
+	/* Spacing above and below */
+	white-space: pre-wrap;
+	/* Preserves whitespace and wraps long lines */
 }
 
-@media screen and (max-width: 768px) {
-	#wrapper article.wide-article {
-		width: 95%;
-		/* Narrower on smaller screens */
-	}
+.code-snippet-container code {
+	font-family: 'Courier New', Courier, monospace;
+	/* Monospace font for code */
+	color: #333;
+	/* Dark text color for contrast */
+}
+
+.csv-table-container {
+	max-height: 300px;
+	/* Limits the height of the table */
+	overflow-y: auto;
+	/* Enables vertical scrolling */
+	overflow-x: auto;
+	/* Enables horizontal scrolling if needed */
+	border: 1px solid #ddd;
+	/* Subtle border */
+	border-radius: 5px;
+	/* Rounded corners */
+	margin: 10px 0;
+	/* Spacing above and below */
+	display: block;
+	/* Ensures the container respects overflow settings */
+}
+
+.csv-table-container table {
+	width: 100%;
+	/* Full width */
+	border-collapse: collapse;
+	/* Removes gaps between table cells */
+	font-size: 14px;
+	/* Readable font size */
+	table-layout: auto;
+	/* Allows columns to adjust based on content */
+}
+
+.csv-table-container th,
+.csv-table-container td {
+	padding: 8px;
+	/* Inner spacing for cells */
+	border: 1px solid #7e7c7c;
+	/* Borders for cells */
+	text-align: left;
+	/* Left-align text */
+	/* color: #333 !important; */
+}
+
+.csv-table-container th {
+	background-color: rgba(255, 255, 255, 0);
+	/* Light background for headers */
+	font-weight: bold;
+	/* Bold headers */
+}
+
+.csv-table-container td {
+	background-color: rgba(255, 255, 255, 0.123);
+	/* White background for data rows */
+}
+
+.csv-table-container td.generated-email {
+	/* white-space: pre-wrap; */
+	/* Allows text to wrap while preserving newlines */
+	/* max-width: 300px; */
+	/* Limits the width of the email column to prevent excessive stretching */
+	/* white-space: nowrap; */
+	/* Prevents text wrapping, allowing horizontal scroll */
+	white-space: pre;
+	/* Preserves newlines and spaces */
+	min-width: 600px;
+	/* Sets a wider minimum width for the email column */
+	font-family: inherit;
+	/* Inherits the table's font, typically sans-serif */
+}
+
+.csv-table-container td.generated-email pre {
+	font-family: inherit;
+	/* Ensures the pre tag uses the same font */
+	margin: 0; 
+	/* Removes default pre margin if any */
+	padding: 0;
+	/* Removes default pre padding if any */
+}
+
+
+.md-preview-container {
+	max-height: 300px;
+	/* Limits the height of the Markdown preview */
+	overflow-y: auto;
+	/* Enables vertical scrolling */
+	overflow-x: auto;
+	/* Enables horizontal scrolling if needed */
+	border: 1px solid #ddd;
+	/* Subtle border */
+	border-radius: 5px;
+	/* Rounded corners */
+	padding: 10px;
+	/* Inner spacing */
+	font-size: 14px;
+	/* Readable font size */
+	margin: 10px 0;
+	/* Spacing above and below */
+	background-color: #4d4b4b50;
+	/* White background to match table style */
+	color: #fcfcfc;
+	/* Dark text color for visibility */
+}
+
+.md-preview-container h1 {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+
+.md-preview-container h2 {
+	font-size: 1.2em;
+	margin: 0.5em 0;
+}
+
+.md-preview-container p {
+	margin: 0.5em 0;
+}
+
+.md-preview-container ul,
+.md-preview-container ol {
+	margin: 0.5em 0;
+	padding-left: 20px;
+}
+
+.md-preview-container a {
+	color: #59a6f3;
+	text-decoration: none;
+}
+
+.md-preview-container a:hover {
+	text-decoration: underline;
 }
